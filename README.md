@@ -4,8 +4,6 @@ This project provides a generic modulo calculator implemented using a Finite Sta
 
 The core logic is based on dynamically generating the FSM's states and transition function based on the specified modulus.
 
----
-
 ## Features
 - **Generic Modulo Calculation:** Calculate binary_string % N for any N > 1.
 
@@ -16,8 +14,6 @@ The core logic is based on dynamically generating the FSM's states and transitio
 - **Command-Line Interface (CLI):** A convenient script to perform calculations directly from the terminal.
 
 - **PHPUnit Tests:** Comprehensive unit tests to ensure correctness and robustness.
-
----
 
 ## Project Structure
 ```
@@ -33,8 +29,6 @@ The core logic is based on dynamically generating the FSM's states and transitio
 └── tests/
     └── GenericModuloFSMTest.php # PHPUnit test cases
 ```
-
----
 
 ## Installation
 To set up the project, follow these steps:
@@ -58,8 +52,6 @@ This command will download PHPUnit and set up the PSR-4 autoloading, making the 
 ```bash
 chmod +x bin/modulo-cli.php
 ```
-
----
 
 ## Usage
 You can use the modulo calculator as a PHP library within your projects or via the provided command-line interface.
@@ -112,8 +104,6 @@ try {
 
 ?>
 ```
-
----
 
 ## Testing
 The project includes comprehensive unit tests using PHPUnit to ensure the correctness of the FSM logic and modulo calculations.
