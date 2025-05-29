@@ -1,0 +1,12 @@
+# Composer dependencies
+/vendor/
+
+# PHPUnit cache
+.phpunit.result.cache
+
+# IDE-specific files (examples)
+.idea/          # PhpStorm
+.vscode/        # VS Code
+*.sublime-project
+*.sublime-workspace
+.phpintel/
