@@ -1,20 +1,25 @@
-#Generic Modulo Calculator (FSM-based)
+# Generic Modulo Calculator (FSM-based)
+
 This project provides a generic modulo calculator implemented using a Finite State Machine (FSM) approach in PHP. It can compute the remainder of a binary string (representing an unsigned integer) when divided by any given modulus N (where N > 1).
 
 The core logic is based on dynamically generating the FSM's states and transition function based on the specified modulus.
 
-##Features
-- Generic Modulo Calculation: Calculate binary_string % N for any N > 1.
+---
 
-- Finite State Machine (FSM) Implementation: Uses an efficient FSM approach, avoiding direct binary-to-decimal conversion for large numbers.
+## Features
+- **Generic Modulo Calculation:** Calculate binary_string % N for any N > 1.
 
-- Composer Package: Easily integrate into other PHP projects.
+- **Finite State Machine (FSM) Implementation:** Uses an efficient FSM approach, avoiding direct binary-to-decimal conversion for large numbers.
 
-- Command-Line Interface (CLI): A convenient script to perform calculations directly from the terminal.
+- **Composer Package:** Easily integrate into other PHP projects.
 
-- PHPUnit Tests: Comprehensive unit tests to ensure correctness and robustness.
+- **Command-Line Interface (CLI):** A convenient script to perform calculations directly from the terminal.
 
-##Project Structure
+- **PHPUnit Tests:** Comprehensive unit tests to ensure correctness and robustness.
+
+---
+
+## Project Structure
 ```
 .
 ├── composer.json               # Composer configuration for dependencies and autoloading
@@ -29,14 +34,16 @@ The core logic is based on dynamically generating the FSM's states and transitio
     └── GenericModuloFSMTest.php # PHPUnit test cases
 ```
 
-##Installation
+---
+
+## Installation
 To set up the project, follow these steps:
 
 1. Clone the repository (or create the files manually as provided):
 
 ```bash
-git clone https://github.com/patelbhavika46/modulo-calculator.git
-cd modulo-calculator
+git clone https://github.com/patelbhavika46/php-generic-modulo-calculator.git
+cd php-generic-modulo-calculator
 ```
 
 2. Install Composer dependencies:
@@ -52,10 +59,12 @@ This command will download PHPUnit and set up the PSR-4 autoloading, making the 
 chmod +x bin/modulo-cli.php
 ```
 
-##Usage
+---
+
+## Usage
 You can use the modulo calculator as a PHP library within your projects or via the provided command-line interface.
 
-###Using the CLI Tool
+### Using the CLI Tool
 The modulo-cli.php script allows you to calculate modulo remainders directly from your terminal.
 
 ```bash
@@ -71,7 +80,7 @@ Enter the binary string (must contain only '0's and '1's, e.g., 1101): 1101
 
 The remainder of binary '1101' modulo 3 is: 1
 ```
-###Using as a PHP Library
+### Using as a PHP Library
 You can integrate the GenericModuloFSM class into your own PHP applications.
 
 First, ensure your project's composer.json includes this package and you've run ```composer install```.
@@ -104,7 +113,9 @@ try {
 ?>
 ```
 
-##Testing
+---
+
+## Testing
 The project includes comprehensive unit tests using PHPUnit to ensure the correctness of the FSM logic and modulo calculations.
 
 To run the tests, navigate to the project's root directory in your terminal and execute:
